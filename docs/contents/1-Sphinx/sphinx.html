@@ -1,0 +1,130 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sphinx 简介 &#8212; Sphinx book 1 文档</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="环境配置" href="environment.html" />
+    <link rel="prev" title="总结" href="../0-BeforeStart/summary.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sphinx">
+<span id="sphinx"></span><h1>Sphinx 简介<a class="headerlink" href="#sphinx" title="永久链接至标题">¶</a></h1>
+<p>Sphinx，本意是“狮身人面像”，作为本教材主要介绍的工具，Sphinx 是一个基于 Python 开发的文档生成工具，由Georg Brandi开发，其第一个公开版本在2008年3月21日发布。目前的 <a href="https://docs.python.org/zh-cn/3/" target="_blank">Python 官方文档</a>就是基于 Sphinx 开发生成的。</p>
+<p>用 Sphinx 开发文档，有以下几个亮点：</p>
+<ul class="simple">
+<li>多种输出格式：HTML，LaTeX，ePub，手册，纯文本</li>
+<li>层次结构清晰：通过简单的文本树定义，能链接到同层和上下层的文本</li>
+<li>自动生成目录：生成索引以及其他模块的目录</li>
+<li>代码高亮：通过 Pygments 组件实现代码高亮</li>
+</ul>
+<p>我们可以 Sphinx 想象成一种文档框架，通过构建 Sphinx 项目搭建起文档的框架，进行内容创作就是往框架中填充内容，Sphinx 会将单调的重复工作抽象化，通过自动函数解决一些常见的问题，如突出显示标题索引和特殊代码等。</p>
+<p>Sphinx 使用 reStructuredText 等标记语法来提供文档控制，标记语言的介绍与语法将在后面的章节详细介绍。</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Sphinx book</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+<p class="caption"><span class="caption-text">序</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/overview.html">文档代码化开发教程概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/target_users.html">目标用户</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/environment.html">环境及版本说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/summary.html">总结</a></li>
+</ul>
+<p class="caption"><span class="caption-text">搭建框架：Sphinx 入门</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment.html">环境配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">安装 Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">通过 sphinx-quickstart 新建项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_elements.html">Sphinx 项目元素</a></li>
+</ul>
+<p class="caption"><span class="caption-text">内容创作：标记语言初识</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2-Markup/markup.html">标记语言简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2-Markup/md.html">Markdown 语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2-Markup/md.html#">一级标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2-Markup/rst.html">reStructured Text 语法指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2-Markup/VScode.html">写作工具推荐</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../0-BeforeStart/summary.html" title="上一章">总结</a></li>
+      <li>Next: <a href="environment.html" title="下一章">环境配置</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="转向" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Ariel.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../../_sources/contents/1-Sphinx/sphinx.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>标记语言简介 &#8212; Sphinx book 1 文档</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Markdown 语法" href="md.html" />
+    <link rel="prev" title="Sphinx 项目元素" href="../1-Sphinx/project_elements.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="">
+<span id="id1"></span><h1>标记语言简介<a class="headerlink" href="#" title="永久链接至标题">¶</a></h1>
+<blockquote>
+<div><strong>标记语言</strong>（也称置标语言、标记语言、标志语言、标识语言、markup language）是一种将文本（Text）以及文本相关的其他信息结合起来，展现出关于文档结构和数据处理细节的计算机文字编码。与文本相关的其他信息（包括例如文本的结构和表示信息等）与原来的文本结合在一起，但是使用标记（markup）进行标识。当今广泛使用的标记语言是超文本置标语言（HyperText Markup Language，HTML）和可扩展置标语言（eXtensible Markup Language，XML）。标记语言广泛应用于网页和网络应用程序。标记最早用于出版业，是作者、编辑以及出版商之间用于描述出版作品的排版格式所使用的。
+——wikipedia</div></blockquote>
+<p>标记语言，我们可以理解为“<strong>带标记的语言</strong>”，那么什么是标记呢？想一下我们最常用的文本处理工具 Microsoft Office Word，在用 Word 进行文本编辑时，可以调整文本的格式，加粗，加下划线、删除线，调整字号，设定段落缩进等等。这些操作都可以理解为给文字加上了标记。但是 Word 中带格式的文本并不等同于我们所说的标记语言，因为 Word 中文本的格式是依赖于 Word 存在的，复制到别的编辑器中，原本的格式就失效了，这样，文本并没有自己带上标记，所以不是标记语言。标记语言能将简单的格式融入到文本当中，在写作编辑的时候能同时快速进行文本格式的设置。</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Sphinx book</a></h1>
+
+
+
+
+
+
+
+
+<h3>导航</h3>
+<p class="caption"><span class="caption-text">序</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/overview.html">文档代码化开发教程概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/target_users.html">目标用户</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/environment.html">环境及版本说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/summary.html">总结</a></li>
+</ul>
+<p class="caption"><span class="caption-text">搭建框架：Sphinx 入门</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/sphinx.html">Sphinx 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/environment.html">环境配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/installation.html">安装 Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/quickstart.html">通过 sphinx-quickstart 新建项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/project_elements.html">Sphinx 项目元素</a></li>
+</ul>
+<p class="caption"><span class="caption-text">内容创作：标记语言初识</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">标记语言简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md.html">Markdown 语法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="md.html#">一级标题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rst.html">reStructured Text 语法指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VScode.html">写作工具推荐</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../1-Sphinx/project_elements.html" title="上一章">Sphinx 项目元素</a></li>
+      <li>Next: <a href="md.html" title="下一章">Markdown 语法</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="转向" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Ariel.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../../_sources/contents/2-Markup/markup.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
