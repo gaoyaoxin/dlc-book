@@ -33,6 +33,7 @@
    contents/2-Markup/markup.md
    contents/2-Markup/md.md
    contents/2-Markup/rst.md
+   contents/2-Markup/test.rst
    contents/2-Markup/VScode.md
 
 
