@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sphinx 项目元素 &mdash; Sphinx book 1 文档</title>
+  <title>通过 index.rst 组织文档 &mdash; Sphinx book 1 文档</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="通过 index.rst 组织文档" href="toctree.html" />
-    <link rel="prev" title="通过 sphinx-quickstart 新建项目" href="quickstart.html" /> 
+    <link rel="next" title="标记语言简介" href="../2-Markup/markup.html" />
+    <link rel="prev" title="Sphinx 项目元素" href="project_elements.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -90,13 +90,11 @@
 <li class="toctree-l1"><a class="reference internal" href="environment.html">环境配置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">安装 Sphinx</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">通过 <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> 新建项目</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx 项目元素</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#">项目构成</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#conf-py"><code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 配置文件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#index-rst">index.rst 目录文件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_elements.html">Sphinx 项目元素</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">通过 <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> 组织文档</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#index-rst"><code class="docutils literal notranslate"><span class="pre">index.rst</span></code> 文件概览</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="toctree.html">通过 <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> 组织文档</a></li>
 </ul>
 <p class="caption"><span class="caption-text">第二章 内容创作：标记语言初识</span></p>
 <ul>
@@ -165,13 +163,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Sphinx 项目元素</li>
+      <li>通过 <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> 组织文档</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/contents/1-Sphinx/project_elements.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/contents/1-Sphinx/toctree.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -184,36 +182,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sphinx">
-<span id="sphinx"></span><h1>Sphinx 项目元素<a class="headerlink" href="#sphinx" title="永久链接至标题">¶</a></h1>
-<p>新建 Sphinx 项目之后，本节将介绍 Sphinx 项目的元素及作用。</p>
-<div class="section" id="">
-<span id="id1"></span><h2>项目构成<a class="headerlink" href="#" title="永久链接至标题">¶</a></h2>
-<p>如下图所示，一个 Sphinx 项目一般由一个资源文件夹和一个构建文件夹。
-<img alt="" src="../../_images/tree.png" />
-<code class="docutils literal notranslate"><span class="pre">source</span></code> 文件夹是 Sphinx 项目的资源文件夹，简单来说，就是用来存放我们需要编辑的所有文件的。<code class="docutils literal notranslate"><span class="pre">build</span></code> 文件夹是执行构建命令之后的目标文件夹，新建项目之后这个文件夹还是空的，之后执行 <code class="docutils literal notranslate"><span class="pre">make</span></code> 操作之后，构建出的内容会存放在这个文件夹中。<code class="docutils literal notranslate"><span class="pre">Makefile</span></code>和<code class="docutils literal notranslate"><span class="pre">make.bat</span></code>是构建项目时需要的文件，我们不需要对这两个文件进行任何操作。<strong>提示</strong>：为了便于理解，我们用默认的 source 和 build 文件夹做演示，在实际操作中，也可以将这两个文件夹重命名或将资源和构建文件夹分开存放。</p>
-</div>
-<div class="section" id="conf-py">
-<span id="conf-py"></span><h2><code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 配置文件<a class="headerlink" href="#conf-py" title="永久链接至标题">¶</a></h2>
-<p>在这个文件中，你可以找到所有跟项目配置相关的信息，之前通过<code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code>创建项目时进行的配置，都可以在这里修改。</p>
-<ul class="simple">
-<li>项目基本信息：项目名，版权，作者，版本号</li>
-<li>通用配置：项目的拓展工具，源文件后缀，项目主文件，项目语言等信息</li>
-<li>HTML 等指定格式输出配置</li>
-</ul>
-<p>Sphinx 项目默认配置的源文件后缀为<code class="docutils literal notranslate"><span class="pre">.rst</span></code>，即支持 reStructured Text 作为项目写作语言，要添加 Markdown 作为写作语言，需要：</p>
-<ol class="simple">
-<li>将<code class="docutils literal notranslate"><span class="pre">.md</span></code>后缀添加到源文件后缀中，即
-<code class="docutils literal notranslate"><span class="pre">source_suffix</span> <span class="pre">=</span> <span class="pre">'.rst',</span> <span class="pre">'.md'</span></code>，或直接复制方括号内的内容进行替换</li>
-<li>Sphinx 项目通过 recommonmark 支持 Markdown，添加下面内容
-<code class="docutils literal notranslate"><span class="pre">source_parsers</span> <span class="pre">=</span> <span class="pre">{</span> <span class="pre">'.md':</span> <span class="pre">'recommonmark.parser.CommonMarkParser',</span> <span class="pre">}</span></code>配置完成后应如下图所示
-<img alt="" src="../../_images/config.jpg" /></li>
-</ol>
-</div>
+  <div class="section" id="index-rst">
+<span id="index-rst"></span><h1>通过 <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> 组织文档<a class="headerlink" href="#index-rst" title="永久链接至标题">¶</a></h1>
 <div class="section" id="index-rst">
-<span id="index-rst"></span><h2>index.rst 目录文件<a class="headerlink" href="#index-rst" title="永久链接至标题">¶</a></h2>
-<p>Sphinx 项目通过 <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> 文件自动生成目录。你可以将这个文件夹当作整个项目的入口文件，所有的文档都通过这个文件组织连接起来。
-在下一节“</p>
+<span id="id1"></span><h2><code class="docutils literal notranslate"><span class="pre">index.rst</span></code> 文件概览<a class="headerlink" href="#index-rst" title="永久链接至标题">¶</a></h2>
 </div>
 </div>
 
@@ -225,10 +197,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="toctree.html" class="btn btn-neutral float-right" title="通过 index.rst 组织文档" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../2-Markup/markup.html" class="btn btn-neutral float-right" title="标记语言简介" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="quickstart.html" class="btn btn-neutral" title="通过 sphinx-quickstart 新建项目" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="project_elements.html" class="btn btn-neutral" title="Sphinx 项目元素" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

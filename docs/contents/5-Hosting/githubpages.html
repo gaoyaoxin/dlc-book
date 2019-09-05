@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>托管到 GithubPages &mdash; Sphinx book 1 文档</title>
+  <title>托管到 GitHub Pages &mdash; Sphinx book 1 文档</title>
   
 
   
@@ -78,42 +78,47 @@
               
             
             
-              <p class="caption"><span class="caption-text">序</span></p>
+              <p class="caption"><span class="caption-text">序章：开始之前</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/overview.html">文档代码化开发教程概览</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/target_users.html">目标用户</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/environment.html">环境及版本说明</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/summary.html">总结</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/environment.html">环境版本及其他说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../0-BeforeStart/summary.html">计算机基本操作汇总</a></li>
 </ul>
-<p class="caption"><span class="caption-text">搭建框架：Sphinx 入门</span></p>
+<p class="caption"><span class="caption-text">第一章 搭建框架：Sphinx 入门</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/sphinx.html">Sphinx 简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/environment.html">环境配置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/installation.html">安装 Sphinx</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/quickstart.html">通过 sphinx-quickstart 新建项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/quickstart.html">通过 <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> 新建项目</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/project_elements.html">Sphinx 项目元素</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1-Sphinx/toctree.html">通过 <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> 组织文档</a></li>
 </ul>
-<p class="caption"><span class="caption-text">内容创作：标记语言初识</span></p>
+<p class="caption"><span class="caption-text">第二章 内容创作：标记语言初识</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../2-Markup/markup.html">标记语言简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2-Markup/md.html">Markdown 语法</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2-Markup/rst.html">reStructured Text 语法指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2-Markup/test.html">heading1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../2-Markup/VScode.html">写作工具推荐</a></li>
 </ul>
-<p class="caption"><span class="caption-text">文档构建：Make 选项详解</span></p>
+<p class="caption"><span class="caption-text">第三章 文档构建：Make 选项详解</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../3-Make/html.html">发布 HTML 版本</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../3-Make/pdf.html">发布为 PDF 版本</a></li>
 </ul>
-<p class="caption"><span class="caption-text">文档发布：在线托管</span></p>
+<p class="caption"><span class="caption-text">第五章 文档发布：在线托管</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">托管到 GithubPages</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">托管到 GitHub Pages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#">托管前提</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-pages">GitHub Pages 托管</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="readthedocs.html">托管到 ReadTheDocs</a></li>
 </ul>
-<p class="caption"><span class="caption-text">协作与版本控制</span></p>
+<p class="caption"><span class="caption-text">第六章 协作与版本控制</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../6-Git/git.html">Git 快速入门</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../6-Git/github.html">Github 快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../6-Git/git.html">Git 入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../6-Git/github.html">Github 入门</a></li>
 </ul>
 
             
@@ -159,7 +164,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>托管到 GithubPages</li>
+      <li>托管到 GitHub Pages</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -178,8 +183,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="githubpages">
-<span id="githubpages"></span><h1>托管到 GithubPages<a class="headerlink" href="#githubpages" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="github-pages">
+<span id="github-pages"></span><h1>托管到 GitHub Pages<a class="headerlink" href="#github-pages" title="永久链接至标题">¶</a></h1>
+<div class="section" id="">
+<span id="id1"></span><h2>托管前提<a class="headerlink" href="#" title="永久链接至标题">¶</a></h2>
+<ul>
+<li><p class="first">GitHub 账号与相应项目</p>
+<p>通过 GitHub 托管网页，需要有 GitHub 账号是肯定的。还需要新建用来存放项目的项目仓库。
+Github 的相关操作在“协同与版本控制”章节有详细讲解。</p>
+</li>
+<li><p class="first">GitHub Pages 托管机制与 docs 文件夹</p>
+<blockquote>
+<div><p>You can configure GitHub Pages to publish your site's source files from <code class="docutils literal notranslate"><span class="pre">master</span></code>, <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>, or a <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder on your master branch for Project Pages and other Pages sites that meet certain criteria.</p>
+</div></blockquote>
+<p>GitHub Pages 托管来源要求是来自 <code class="docutils literal notranslate"><span class="pre">master</span></code> 或 <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> 分支或者名为'docs'的文件夹。</p>
+<p>GitHub Pages 是通过 <code class="docutils literal notranslate"><span class="pre">index.html</span></code> 作为入口识别托管的网页，这个 <code class="docutils literal notranslate"><span class="pre">index.html</span></code> 必须直接存放在 <code class="docutils literal notranslate"><span class="pre">master</span></code> 或 <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> 分支，而不是放在分支的其他文件夹中。把分支当作文件夹来看</p>
+<p>但我们的 Sphinx 项目构建发布为 html 版本之后，是存放于<code class="docutils literal notranslate"><span class="pre">build</span></code> 文件夹的，所以将整个 Sphinx 项目托管到 GitHub Pages 之后，从分支不能直接访问到 <code class="docutils literal notranslate"><span class="pre">index.html</span></code> 文件，就需要通过 <code class="docutils literal notranslate"><span class="pre">/docs</span></code> 文件夹托管。</p>
+</li>
+</ul>
+</div>
+<div class="section" id="github-pages">
+<span id="id2"></span><h2>GitHub Pages 托管<a class="headerlink" href="#github-pages" title="永久链接至标题">¶</a></h2>
+<p>参考链接：GitHub Pages 设置参考 https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages</p>
+</div>
 </div>
 
 

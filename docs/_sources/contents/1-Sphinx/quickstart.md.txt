@@ -1,4 +1,4 @@
-# 通过 sphinx-quickstart 新建项目
+# 通过 `sphinx-quickstart` 新建项目
 
 #### 新建项目
 

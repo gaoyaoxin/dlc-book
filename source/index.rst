@@ -8,27 +8,27 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: 序
+   :caption: 序章：开始之前
 
    contents/0-BeforeStart/overview.md
-   contents/0-BeforeStart/target_users.md
    contents/0-BeforeStart/environment.md
    contents/0-BeforeStart/summary.md
 
 .. toctree::
    :maxdepth: 2
-   :caption: 搭建框架：Sphinx 入门
+   :caption: 第一章 搭建框架：Sphinx 入门
 
    contents/1-Sphinx/sphinx.md
    contents/1-Sphinx/environment.md
    contents/1-Sphinx/installation.md
    contents/1-Sphinx/quickstart.md
    contents/1-Sphinx/project_elements.md
+   contents/1-Sphinx/toctree.md
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: 内容创作：标记语言初识
+   :caption: 第二章 内容创作：标记语言初识
 
    contents/2-Markup/markup.md
    contents/2-Markup/md.md
@@ -39,7 +39,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: 文档构建：Make 选项详解
+   :caption: 第三章 文档构建：Make 选项详解
 
    contents/3-Make/html.md
    contents/3-Make/pdf.md
@@ -47,14 +47,14 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: 个性化：主题自定义
+   :caption: 第四章 个性化：主题自定义
 
    contents/4-Theme/
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: 文档发布：在线托管
+   :caption: 第五章 文档发布：在线托管
 
    contents/5-Hosting/githubpages.md
    contents/5-Hosting/readthedocs.md
@@ -62,16 +62,16 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: 协作与版本控制
+   :caption: 第六章 协作与版本控制
 
    contents/6-Git/git.md
    contents/6-Git/github.md
-   
+    
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: 实践案例
+   :caption: 第七章 实践案例
 
    contents/7-Cases/
 
