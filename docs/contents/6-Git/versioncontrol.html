@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Git 入门 &mdash; Sphinx book 1 文档</title>
+  <title>概览 &mdash; Sphinx book 1 文档</title>
   
 
   
@@ -27,9 +27,7 @@
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
-    <link rel="search" title="搜索" href="../../search.html" />
-    <link rel="next" title="Github 入门" href="github.html" />
-    <link rel="prev" title="托管到 ReadTheDocs" href="../5-Hosting/readthedocs.html" /> 
+    <link rel="search" title="搜索" href="../../search.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -112,11 +110,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../5-Hosting/readthedocs.html">托管到 ReadTheDocs</a></li>
 </ul>
 <p class="caption"><span class="caption-text">第六章 协作与版本控制</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Git 入门</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#git">Git 安装</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Git 入门</a></li>
 <li class="toctree-l1"><a class="reference internal" href="github.html">Github 入门</a></li>
 </ul>
 
@@ -163,13 +158,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Git 入门</li>
+      <li>概览</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/contents/6-Git/git.md.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/contents/6-Git/versioncontrol.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -182,11 +177,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="git">
-<span id="git"></span><h1>Git 入门<a class="headerlink" href="#git" title="永久链接至标题">¶</a></h1>
-<p>Git 是一个开源的分布式版本控制系统。</p>
-<div class="section" id="git">
-<span id="id1"></span><h2>Git 安装<a class="headerlink" href="#git" title="永久链接至标题">¶</a></h2>
+  <div class="section" id="">
+<span id="id1"></span><h1>概览<a class="headerlink" href="#" title="永久链接至标题">¶</a></h1>
+<div class="section" id="">
+<span id="id2"></span><h2>版本控制<a class="headerlink" href="#" title="永久链接至标题">¶</a></h2>
+<p>写过论文报告的人都有不断修改文件的经验，有时还需要保留不同版本便于对比替换，这就是最简单的版本控制了。通过手动实现的少量文件的版本控制还算可行，当文件数量达到以千计万计时就会显得十分吃力，这时就需要版本控制系统帮助了。</p>
+<p>版本控制系统（ Version Control System），能够记录文件变化，进行版本回退和细节比较。</p>
+<ul>
+<li><p class="first">本地版本控制系统</p>
+<p>它的工作原理，是在硬盘上保存补丁集（补丁是指文件修订前后的变化），通过应用相应的补丁，可以重新计算出各个版本的文件内容。其中最流行的一种叫做 RCS（Revision Control System），现今许多计算机系统上都还看得到它的踪影。甚至在流行的 Mac OS 系统上安装了开发者工具包之后，也可以使用&nbsp;rcs&nbsp;命令。</p>
+</li>
+<li><p class="first">集中式版本控制系统</p>
+</li>
+</ul>
+<ul class="simple">
+<li>分布式版本控制系统</li>
+</ul>
+</div>
+<div class="section" id="">
+<span id="id3"></span><h2>协同开发<a class="headerlink" href="#" title="永久链接至标题">¶</a></h2>
+<p>通过上面所讲的集中式或分布式版本控制系统，能够依托网络实现线上协同开发，而非通过复制拷贝文件的协同。</p>
+<p>本教程主要介绍其中一种布式版本控制系统 Git，以及使用 Git 做为唯一版本库格式的项目托管平台 Github。了解 Git 的工作原理，能更好地帮助我们在遇到问题时能查找原因。</p>
+<p><strong>说明</strong> Git 是推荐掌握的技能，若理解和学习 Git 有一定难度，掌握 Github 的使用即可。</p>
 </div>
 </div>
 
@@ -195,15 +207,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="github.html" class="btn btn-neutral float-right" title="Github 入门" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../5-Hosting/readthedocs.html" class="btn btn-neutral" title="托管到 ReadTheDocs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
